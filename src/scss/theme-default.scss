@@ -11,7 +11,7 @@ body {
 }
 
 
-@import 'mixins.scss';
+@import 'mixins';
 .img {
 	max-width: 100%;
 	@include transition(.3s);
@@ -135,13 +135,13 @@ h3{
 
 // background-image
 .bg-img-1{
-    background-image: url(../img/slider/slider-img-1.jpg);
+    background-image: url(../src/img/slider/slider-img-1.jpg);
 }
 .bg-img-2{
-    background-image: url(../img/background-img/bg-img-2.jpg);
+    background-image: url(../src/img/background-img/bg-img-2.jpg);
 }
 .cta-bg-1{
-    background-image: url(../img/background-img/bg-img-3.jpg);
+    background-image: url(../src/img/background-img/bg-img-3.jpg);
 
 }
 
@@ -263,4 +263,3 @@ h3{
 	}
 }
 
-  
