@@ -10,16 +10,5 @@ export default defineConfig({
         port: 3000,
         open: true
     },
-    // resolve: {
-    //     alias: {
-    //         "@": fileURLToPath(new URL("./src", import.meta.url)),
-    //     },
-    // },
-    // css: {
-    //     preprocessorOptions: {
-    //         scss: {
-    //             additionalData: `@import "@/assets/scss/global.scss";`,
-    //         },
-    //     },
-    // }
+    publicDir: '../public'
 })
