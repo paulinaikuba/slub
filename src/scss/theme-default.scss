@@ -11,7 +11,7 @@ body {
 }
 
 
-@import 'mixins.scss';
+@import 'mixins';
 .img {
 	max-width: 100%;
 	@include transition(.3s);
@@ -263,4 +263,3 @@ h3{
 	}
 }
 
-  
