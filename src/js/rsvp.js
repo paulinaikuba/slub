@@ -7,81 +7,57 @@ $(document).ready(function(){
     $(function() {
         $('#attendanceForm').validate({
             rules: {
-                guestName: {
+                firstGuestName: {
                     required: true,
                     minlength: 2
                 },
-                subject: {
+                contact: {
                     required: true,
-                    minlength: 4
-                },
-                number: {
-                    required: true,
-                    minlength: 5
-                },
-                email: {
-                    required: true,
-                    email: true
-                },
-                message: {
-                    required: true,
-                    minlength: 20
+                    minlength: 2
                 }
             },
             messages: {
-                name: {
-                    required: "come on, you have a name, don't you?",
-                    minlength: "your name must consist of at least 2 characters"
+                firstGuestName: {
+                    required: "Należy podać imię i nazwisko",
+                    minlength: "Imię i nazwisko musi składać się z co najmniej 2 znaków"
                 },
-                subject: {
-                    required: "come on, you have a subject, don't you?",
-                    minlength: "your subject must consist of at least 4 characters"
-                },
-                number: {
-                    required: "come on, you have a number, don't you?",
-                    minlength: "your Number must consist of at least 5 characters"
-                },
-                email: {
-                    required: "no email, no message"
-                },
-                message: {
-                    required: "um...yea, you have to write something to send this form.",
-                    minlength: "thats all? really?"
+                contact: {
+                    required: "Należy podać email lub numer telefonu",
+                    minlength: "Kontakt musi składać się z co najmniej 2 znaków"
                 }
             },
             submitHandler: function(form) {
+                $('#attendanceForm :input[type="submit"]').prop('disabled', true);
                 const formData = {
-                    name: $('#nameInput').val(),
-                    email: $('#emailInput').val(),
-                    guestsCount: $('#default-select').val(),
+                    willAttend: $('#attendInput').prop('checked'),
+                    firstGuestName: $('#firstGuestNameInput').val(),
+                    secondGuestName: $('#secondGuestNameInput').val(),
+                    contact: $('#contactInput').val(),
+                    foodIntolerance: $('#foodIntoleranceInput').val(),
+                    accommodation: $('#accommodationInput').val(),
+                    transportDetails: $('#transportDetailsInput').val(),
                     additionalInfo: $('#additionalInfoInput').val(),
 
                 };
-
-                console.log(form);
-                console.log(formData);
 
                 $.ajax({
                     type:"POST",
                     contentType: 'application/json',
                     data: JSON.stringify(formData),
-                    url:"https://uzpb36umswfzkamca52hbnxwpq0ptgsk.lambda-url.eu-north-1.on.aws/api/v1/attendance",
+                    url:"https://t7bsahd5svzc6kipaikeyobzam0pjiub.lambda-url.eu-north-1.on.aws/api/v1/attendance",
+                    // url:"/api/v1/attendance",
                     success: function() {
-                        $('#contactForm :input').attr('disabled', 'disabled');
-                        $('#contactForm').fadeTo( "slow", 1, function() {
-                            $(this).find(':input').attr('disabled', 'disabled');
-                            $(this).find('label').css('cursor','default');
-                            $('#success').fadeIn()
-                            $('.modal').modal('hide');
-		                	$('#success').modal('show');
-                        })
+                        $('#attendInput').prop('checked', true).change()
+                        $('#attendanceForm :input').val('');
+
+                        $('#attendanceForm :input[type="submit"]').prop('disabled', false);
                     },
                     error: function() {
-                        $('#attendanceForm').fadeTo( "slow", 1, function() {
-                            $('#error').fadeIn()
-                            $('.modal').modal('hide');
-		                	$('#error').modal('show');
-                        })
+                        $('#attendInput').prop('checked', true).change()
+                        $('#attendanceForm :input').val('');
+
+                        $('#attendanceForm :input[type="submit"]').prop('disabled', false);
+                        $('#rsvp-error').show();
                     }
                 })
             }
