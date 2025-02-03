@@ -123,7 +123,7 @@
     </div>
     <!--/ wedding_countdown -->
 
-    <!-- ================ contact section start ================= -->
+    <!-- location_area -->
     <section class="location_area">
         <div class="location_info">
             <div class="location_inner">
@@ -143,7 +143,7 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <p class="popup_box">Prosimy o przybycie 15 min przed rozpoczęciem</p>
+                    <p class="popup_box" style="font-size: 12px;">Prosimy o przybycie 15 min przed rozpoczęciem</p>
                 </div>
             </div>
         </div>
@@ -153,7 +153,84 @@
             </div>
         </div>
     </section>
-    <!-- ================ contact section end ================= -->
+    <!-- /location_area -->
+
+    <!-- attend_area -->
+    <div class="attending_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
+                    <div class="main_attending_area">
+                        <div class="flower_1 d-none d-lg-block">
+                            <img src="img/appointment/flower-top.png" alt="">
+                        </div>
+                        <div class="flower_2 d-none d-lg-block">
+                            <img src="img/appointment/flower-bottom.png" alt="">
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-xl-7 col-lg-8">
+                                <div class="popup_box ">
+                                    <div class="popup_inner">
+                                        <div class="form_heading text-center">
+                                            <h3>Weźmiesz udział?</h3>
+                                            <p style="font-size: 12px;">Prosimy o potwierdzenie obecności przed 3. lipca.</p>
+                                        </div>
+                                        <form id="attendanceForm" action="" novalidate="novalidate">
+                                            <div class="row">
+                                                <div class="col-xl-12">
+                                                    <input id="attendInput" type="checkbox" checked data-toggle="toggle" name="willAttend"
+                                                           data-width="200"
+                                                           data-height="50"
+                                                           data-onstyle="attend"
+                                                           data-on="Wezmę udział"
+                                                           data-off="Nie wezmę udziału">
+                                                </div>
+                                                <div class="col-xl-12">
+                                                    <input id="firstGuestNameInput" name="firstGuestName" type="text"
+                                                           placeholder="Imię i nazwisko 1. gościa">
+                                                </div>
+                                                <div class="col-xl-12">
+                                                    <input id="secondGuestNameInput" name="secondGuestName" type="text"
+                                                           placeholder="Imię i nazwisko 2. gościa">
+                                                </div>
+                                                <div class="col-xl-12">
+                                                    <input id="contactInput" name="contact" type="text"
+                                                           placeholder="Email lub nr telefonu">
+                                                </div>
+                                                <div class="col-xl-12">
+                                                    <input id="foodIntoleranceInput" name="foodIntolerance" type="text"
+                                                           placeholder="Czy posiadasz jakieś nietolerancje pokarmowe?">
+                                                </div>
+                                                <div class="col-xl-12">
+                                                    <input id="accommodationInput" name="accommodation" type="text"
+                                                           placeholder="Czy zarezerwować Ci pokój w hotelu? (Szczegóły w “Nocleg i transport”)">
+                                                </div>
+                                                <div class="col-xl-12">
+                                                    <textarea id="transportDetailsInput" name="transportDetails"
+                                                              placeholder="Czy planujesz przyjechać i wracać samochodem i możesz zaoferować komuś miejsce? A może wręcz przeciwnie, nie masz jak się dotrzeć na przyjęcie i potrzebujesz pomocy w zorganizowaniu transportu? Daj nam znać – postaramy się pomóc!"></textarea>
+                                                </div>
+                                                <div class="col-xl-12">
+                                                    <textarea id="additionalInfoInput" name="additionalInfo"
+                                                              placeholder="Dodatkowe uwagi"></textarea>
+                                                </div>
+                                                <div class="col-xl-12">
+                                                    <button type="submit" class="boxed_btn3">Wyślij</button>
+                                                    <div id="rsvp-error">
+                                                        <p>Wystąpił błąd podczas wysyłki formularza. Proszę spróbować później.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / attend_area -->
 
     <!-- our_love-story -->
     <div id="story" class="love_story_area">
@@ -253,19 +330,19 @@
             <div class="row grid no-gutters">
                 <div class="col-xl-4 col-md-6 col-lg-6 grid-item">
                     <div class="single_gallery gallery_imag_1">
-                        <a class="popup-image" href="img/gallery/1.jpg">
+                        <a class="popup-image" href="/img/gallery/1.jpg">
                         </a>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6 col-lg-6 grid-item">
                     <div class="single_gallery gallery_imag_2">
-                        <a class="popup-image" href="img/gallery/2.jpg">
+                        <a class="popup-image" href="/img/gallery/2.jpg">
                         </a>
                     </div>
                 </div>
                 <div class="col-xl-5 col-md-6 col-lg-6 grid-item">
                     <div class="single_gallery gallery_imag_3">
-                        <a class="popup-image" href="img/gallery/3.jpg">
+                        <a class="popup-image" href="/img/gallery/3.jpg">
                         </a>
                     </div>
                 </div>
@@ -375,82 +452,6 @@
 <!--        </div>-->
 <!--    </div>-->
     <!--/ program_details -->
-
-    <!-- attend_area -->
-    <div class="attending_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
-                    <div class="main_attending_area">
-                        <div class="flower_1 d-none d-lg-block">
-                            <img src="img/appointment/flower-top.png" alt="">
-                        </div>
-                        <div class="flower_2 d-none d-lg-block">
-                            <img src="img/appointment/flower-bottom.png" alt="">
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-xl-7 col-lg-8">
-                                <div class="popup_box ">
-                                    <div class="popup_inner">
-                                        <div class="form_heading text-center">
-                                            <h3>Weźmiesz udział?</h3>
-                                            <p>Prosimy o potwierdzenie obecności przed 3. lipca.</p>
-                                        </div>
-                                        <form id="attendanceForm" action="" novalidate="novalidate">
-                                            <div class="row">
-                                                <div class="col-xl-12">
-                                                    <input id="attendInput" type="checkbox" checked data-toggle="toggle" name="willAttend"
-                                                           data-height="50"
-                                                           data-onstyle="attend"
-                                                           data-on="Wezmę udział"
-                                                           data-off="Nie wezmę udziału">
-                                                </div>
-                                                <div class="col-xl-12">
-                                                    <input id="firstGuestNameInput" name="firstGuestName" type="text"
-                                                           placeholder="Imię i nazwisko 1. gościa">
-                                                </div>
-                                                <div class="col-xl-12">
-                                                    <input id="secondGuestNameInput" name="secondGuestName" type="text"
-                                                           placeholder="Imię i nazwisko 2. gościa">
-                                                </div>
-                                                <div class="col-xl-12">
-                                                    <input id="contactInput" name="contact" type="text"
-                                                           placeholder="Email lub nr telefonu">
-                                                </div>
-                                                <div class="col-xl-12">
-                                                    <input id="foodIntoleranceInput" name="foodIntolerance" type="text"
-                                                           placeholder="Czy posiadasz jakieś nietolerancje pokarmowe?">
-                                                </div>
-                                                <div class="col-xl-12">
-                                                    <input id="accommodationInput" name="accommodation" type="text"
-                                                           placeholder="Czy zarezerwować Ci pokój w hotelu? (Szczegóły w “Nocleg i transport”)">
-                                                </div>
-                                                <div class="col-xl-12">
-                                                    <textarea id="transportDetailsInput" name="transportDetails"
-                                                              placeholder="Czy planujesz przyjechać i wracać samochodem i możesz zaoferować komuś miejsce? A może wręcz przeciwnie, nie masz jak się dotrzeć na przyjęcie i potrzebujesz pomocy w zorganizowaniu transportu? Daj nam znać – postaramy się pomóc!"></textarea>
-                                                </div>
-                                                <div class="col-xl-12">
-                                                    <textarea id="additionalInfoInput" name="additionalInfo"
-                                                              placeholder="Dodatkowe uwagi"></textarea>
-                                                </div>
-                                                <div class="col-xl-12">
-                                                    <button type="submit" class="boxed_btn3">Wyślij</button>
-                                                    <div id="rsvp-error">
-                                                        <p>Wystąpił błąd podczas wysyłki formularza. Proszę spróbować później.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- / attend_area -->
 
    <!-- footer_start -->
    <footer class="footer">
