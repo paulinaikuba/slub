@@ -130,7 +130,7 @@
                 <div class="location_top text-center">
                     <h3>Gdzie?</h3>
                     <p>Gajówka Obręb<br>
-                        <span>Kasztanowa 98, 05-530 Obręb</span> </p>
+                        <span><a href="https://maps.app.goo.gl/zqxDCfVyfUbFsV149">Kasztanowa 98, 05-530 Obręb</a></span> </p>
                 </div>
                 <div class="address_info d-flex justify-content-between">
                     <div class="single_address text-center">
@@ -528,10 +528,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     </script>
     <script>
         function initMap() {
-            var uluru = {
-                lat: -25.363,
-                lng: 131.044
-            };
             var grayStyles = [{
                     featureType: "all",
                     stylers: [{
@@ -549,18 +545,21 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     }]
                 }
             ];
+            const position = { lat: 51.96849038836446, lng: 21.16586165607072 };
             var map = new google.maps.Map(document.getElementById('map'), {
-                center: {
-                    lat: -31.197,
-                    lng: 150.744
-                },
+                center: position,
                 zoom: 9,
                 styles: grayStyles,
                 scrollwheel: false
             });
+            const marker = new AdvancedMarkerElement({
+                map: map,
+                position: position,
+                title: "Gajówka Obręb",
+            });
         }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&amp;callback=initMap">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdKqtR4aa6ORCe9KbKjWVhjkCTcxkzcy4&amp;callback=initMap">
     </script>
 </body>
 
