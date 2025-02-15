@@ -44,7 +44,7 @@ $(document).ready(function(){
                     type:"POST",
                     contentType: 'application/json',
                     data: JSON.stringify(formData),
-                    url:"https://t7bsahd5svzc6kipaikeyobzam0pjiub.lambda-url.eu-north-1.on.aws/api/v1/attendance",
+                    url: import.meta.env.VITE_RSVP_FORM_URL,
                     // url:"/api/v1/attendance",
                     success: function() {
                         $('#attendInput').prop('checked', true).change()

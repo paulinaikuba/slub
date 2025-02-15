@@ -29,10 +29,11 @@
             }
             img{
                 @media #{$mobile_device}{
-                    width: 120px;
+                    height: 22px;
+                    width: auto;
                 }
                 @media #{$tablet_device}{
-                    width: 120px;
+                    height: 30px;
                 }
                 
             }

@@ -1,6 +1,7 @@
 .location_area{
     padding: 0 50px;
     position: relative;
+    margin-bottom: 70px;
     #map{
         height: 800px !important;
         @media #{$tablet_device} {
@@ -34,6 +35,12 @@
             }
             .location_top{
                 margin-bottom: 10px;
+                a{
+                    color: #3686cd;
+                }
+                a:hover{
+                    color: #C78665;
+                }
             }
             h3{
                 font-size: 36px;
