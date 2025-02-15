@@ -30,6 +30,11 @@ dist-ssr
 .env.development.local
 .env.test.local
 .env.production.local
+src/.env
+src/.env.local
+src/.env.development.local
+src/.env.test.local
+src/.env.production.local
 
 # Coverage directory
 coverage
