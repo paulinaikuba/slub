@@ -292,4 +292,8 @@ mailChimp();
             $("#search_input").focus();
         });
 
+    $('#taxi4').text($('#taxi4').text() + ' 563')
+    $('#taxi5').text($('#taxi5').text() + ' 124')
+    $('#taxi6').text($('#taxi6').text() + ' 843')
+
 })(jQuery);	
