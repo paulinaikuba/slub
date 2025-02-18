@@ -129,7 +129,7 @@
                 <div class="location_top text-center">
                     <h3>Gdzie?</h3>
                     <p>Gajówka Obręb<br>
-                        <span><a href="https://maps.app.goo.gl/zqxDCfVyfUbFsV149">Kasztanowa 98, 05-530 Obręb</a></span> </p>
+                        <span><i class="fa fa-map-pin" aria-hidden="true">&nbsp;</i><a href="https://maps.app.goo.gl/zqxDCfVyfUbFsV149" target="_blank">Kasztanowa 98, 05-530 Obręb</a></span> </p>
                 </div>
                 <div class="address_info d-flex justify-content-between">
                     <div class="single_address text-center">
@@ -202,7 +202,8 @@
                                                 </div>
                                                 <div class="col-xl-12">
                                                     <input id="accommodationInput" name="accommodation" type="text"
-                                                           placeholder="Czy zarezerwować Ci pokój w hotelu? (szczegóły poniżej)">
+                                                           placeholder="Zarezerwować Ci pokój w hotelu? (szczegóły poniżej)">
+<!--                                                    <i id="resvRoomInfo" class="fa fa-info-circle" aria-hidden="true" title="Zobacz Nocleg i transport"></i>-->
                                                 </div>
                                                 <div class="col-xl-12">
                                                     <textarea id="transportDetailsInput" name="transportDetails"
@@ -256,21 +257,21 @@
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-12">
                     <div class="single_accommodation text-center">
-                        <h3>Góra Kalwaria</h3>
+                        <h4>Góra Kalwaria</h4>
                         <ul>
-                            <li>Maciej – 603 116 825</li>
-                            <li>Krzysztof – 508 748 875</li>
+                            <li><i class="fa fa-phone" aria-hidden="true">&nbsp;&nbsp;</i>Maciej – 603 116 825</li>
+                            <li><i class="fa fa-phone" aria-hidden="true">&nbsp;&nbsp;</i>Krzysztof – 508 748 875</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12">
                     <div class="single_accommodation text-center">
-                        <h3>Piaseczno</h3>
+                        <h4>Piaseczno</h4>
                         <ul>
-                            <li>Bravo Taxi – 22 756 29 03</li>
-                            <li id="taxi4">Usługi Taxi Marcin Sierakowski – 791 786</li>
-                            <li id="taxi5">WPI Taxi Piaseczno – 533 826</li>
-                            <li id="taxi6">Driver City Piaseczno (Mateusz Wierzchowski) – 796 843</li>
+                            <li><i class="fa fa-phone" aria-hidden="true">&nbsp;&nbsp;</i>Bravo Taxi – 22 756 29 03</li>
+                            <li><i class="fa fa-phone" aria-hidden="true">&nbsp;&nbsp;</i>Usługi Taxi Marcin Sierakowski – 791 786<span id="taxi4"></span></li>
+                            <li><i class="fa fa-phone" aria-hidden="true">&nbsp;&nbsp;</i>WPI Taxi Piaseczno – 533 826<span id="taxi5"></span></li>
+                            <li><i class="fa fa-phone" aria-hidden="true">&nbsp;&nbsp;</i>Driver City Piaseczno (Mateusz Wierzchowski) – 796 843<span id="taxi6"></span></li>
                         </ul>
                     </div>
                 </div>
@@ -519,13 +520,18 @@
             </div>
             <div class="row">
                 <div class="col-xl-12">
-                    <img src="img/pets/pets.png" class="pets_bg" alt="">
+                    <div class="text-center">
+                        <img src="img/pets/pets.png" class="pets_bg" alt="">
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xl-12">
                     <div class="text-center">
-                        <p>Jeśli chcielibyście obdarować nas kwiatami, mamy inną propozycję – podzielmy się miłością z tymi, którzy jej naprawdę potrzebują. Zamiast bukietów prosimy o karmę dla psów i kotów, którą przekażemy podopiecznym schroniska w Celestynowie</p>
+                        <p>Jeśli chcielibyście obdarować nas kwiatami, mamy inną propozycję – podzielmy się miłością z
+                            tymi, którzy jej naprawdę potrzebują. Zamiast bukietów prosimy o karmę dla psów i kotów,
+                            którą przekażemy podopiecznym schroniska w Celestynowie. &nbsp;<i class="fa fa-paw" aria-hidden="true"></i>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -588,6 +594,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="/js/vendor/jquery.ajaxchimp.min.js"></script>
     <script src="/js/vendor/jquery.form.js"></script>
     <script src="/js/vendor/jquery.validate.min.js"></script>
+    <script src="/js/vendor/jquery-ui.min.js"></script>
     <script src="/js/vendor/bootstrap4-toggle.min.js"></script>
 
     <script type="module" src="js/ajax-form.js"></script>
@@ -601,7 +608,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script>
         $('#clock').countdown('2025/08/14 16:30:00', function (event) {
             $(this).html(event.strftime(
-                '<div class="countdown_wrap d-flex"><div  class="single_countdown"><h3>%D</h3><span>Days</span></div><div class="single_countdown"><h3>%H</h3><span>Hours</span></div><div class="single_countdown"><h3>%M</h3><span>Minutes</span></div><div class="single_countdown"><h3>%S</h3><span>Seconds</span></div></div>'
+                '<div class="countdown_wrap d-flex"><div  class="single_countdown"><h3>%D</h3><span>dni</span></div><div class="single_countdown"><h3>%H</h3><span>godzin</span></div><div class="single_countdown"><h3>%M</h3><span>minut</span></div><div class="single_countdown"><h3>%S</h3><span>sekund</span></div></div>'
             ));
         });
     </script>

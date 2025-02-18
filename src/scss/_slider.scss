@@ -61,8 +61,6 @@
          transform: translate(0%,-50%) rotate(0deg);
             padding: 35px 25px;
             left: 0;
-            padding: 35px 25px;
-            left: 0;
             right: 0;
             margin: auto;
             top: 50%;
@@ -74,18 +72,18 @@
          @media #{$mid_device} {
             transform: rotate(0deg);
             transform: translateX(-50%) translateY(-50%) rotate(0deg);
-            padding: 70px 25px;
-               // padding: 35px 25px;
-               // left: 0;
-               // padding: 35px 25px;
-               // left: 0;
-               // right: 0;
-               // margin: auto;
-               // top: 50%;
-               // transform: translateY(-50%);
-               // display: inline-block;
-               // width: 270px;
-               // height: 270px;
+            //padding: 70px 25px;
+                padding: 35px 25px;
+                left: 0;
+                padding: 35px 25px;
+                //left: 0;
+                right: 0;
+                margin: auto;
+                top: 50%;
+                transform: translateY(-50%);
+                display: inline-block;
+                width: 270px;
+                height: 270px;
             }
          .text_inner{
             position: relative;
@@ -134,6 +132,9 @@
                margin-bottom: 20px;
                margin-top: 15px;
             }
+            @media #{$mid_device} {
+               font-size: 20px;
+            }
          }
          span{
             font-size: 18px;
@@ -154,13 +155,13 @@
             left: -20px;
             z-index: -3;
             @media #{$mobile_device}{
-               display: none;
+               //display: none;
             }
             @media #{$tablet_device}{
-               display: none;
+               //display: none;
             }
             @media #{$mid_device}{
-               display: none;
+               //display: none;
             }
 
          }
@@ -177,13 +178,13 @@
             left: -40px;
             z-index: -3;
             @media #{$mobile_device}{
-               display: none;
+               //display: none;
             }
             @media #{$tablet_device}{
-               display: none;
+               //display: none;
             }
             @media #{$mid_device}{
-               display: none;
+               //display: none;
             }
          }
       }
