@@ -46,6 +46,8 @@
             margin-bottom: 20px;
             font-size: 16px;
             line-height: 28px;
+            text-align: center;
+            text-justify: auto;
         }
         .social_links{
             text-align: center;
@@ -99,6 +101,8 @@
                 font-size: 16px;
                 line-height: 28px;
                 font-family: $font1;
+                text-align: center;
+                text-justify: auto;
             }
             &:nth-child(4){
                 &::before{

@@ -296,6 +296,6 @@ mailChimp();
     $('#taxi5').text($('#taxi5').text() + ' 124')
     $('#taxi6').text($('#taxi6').text() + ' 843')
 
-    // $('#resvRoomInfo').tooltip();
+    $( document ).tooltip();
 
 })(jQuery);	

@@ -49,9 +49,13 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a class="active" href="index.html">Start</a></li>
+                                        <li><a class="active" href="./">Start</a></li>
+                                        <li><a href="#location_area">Lokalizacja</a></li>
+                                        <li><a href="#attending_area">R.S.V.P.</a></li>
+                                        <li><a href="#accommodation">Transport & nocleg</a></li>
                                         <li><a href="#story">Nasza historia</a></li>
                                         <li><a href="#gallery">Galeria</a></li>
+                                        <li><a href="#contact">Kontakt</a></li>
 <!--                                        <li><a href="#">blog <i class="ti-angle-down"></i></a>-->
 <!--                                            <ul class="submenu">-->
 <!--                                                <li><a href="blog.html">blog</a></li>-->
@@ -64,7 +68,6 @@
 <!--                                                <li><a href="elements.html">elements</a></li>-->
 <!--                                            </ul>-->
 <!--                                        </li>-->
-                                        <li><a href="contact.html">Kontakt</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -87,7 +90,7 @@
                     <img src="img/banner/ornaments.png" alt="">
                     <h4>14. sierpnia 2025</h4>
                     <h3>Paulina & Kuba <br></h3>
-                    <span>Biorą ślub</span>
+                    <span>Zapraszają</span>
                 </div>
             </div>
         </div>
@@ -123,7 +126,7 @@
     <!--/ wedding_countdown -->
 
     <!-- location_area -->
-    <section class="location_area">
+    <section id="location_area" class="location_area">
         <div class="location_info">
             <div class="location_inner">
                 <div class="location_top text-center">
@@ -155,7 +158,7 @@
     <!-- /location_area -->
 
     <!-- attend_area -->
-    <div class="attending_area">
+    <div id="attending_area" class="attending_area">
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
@@ -197,8 +200,15 @@
                                                            placeholder="Email lub nr telefonu">
                                                 </div>
                                                 <div class="col-xl-12">
-                                                    <input id="foodIntoleranceInput" name="foodIntolerance" type="text"
-                                                           placeholder="Czy posiadasz jakieś nietolerancje pokarmowe?">
+                                                    <div class="input-group">
+                                                        <input id="foodIntoleranceInput" name="foodIntolerance" type="text"
+                                                               placeholder="Czy posiadasz jakieś nietolerancje pokarmowe?">
+                                                        <span class="input-group-addon">
+                                                            <i class="fa fa-info-circle" aria-hidden="true"
+                                                               title="Proszę podać wszelkie nietolerancje pokarmowe, które mogą mieć wpływ na menu.">
+                                                            </i>
+                                                        </span>
+                                                    </div>
                                                 </div>
                                                 <div class="col-xl-12">
                                                     <input id="accommodationInput" name="accommodation" type="text"
@@ -245,7 +255,7 @@
             </div>
             <div class="row">
                 <div class="col-xl-12">
-                    <div class="">
+                    <div class="accommodation_text">
                         <p>W Gajówce nie ma możliwości noclegu, ale wiemy, że część z Was chciałaby zostać na noc, by uniknąć powrotu późną nocą. Chętnie pomożemy w znalezieniu i rezerwacji hotelu w pobliżu. Planujemy zrobić grupową rezerwację (najpewniej w hotelu Eurohotel Baniocha), tak aby każdy zainteresowany miał zagwarantowane miejsce. Koszt noclegu będzie wynosić około 100–155 zł za osobę za dobę ze śniadaniem (w zależności od rodzaju pokoju i liczby osób). Płatność odbędzie się na miejscu, przy zameldowaniu.</p>
                         <p>Dodatkowo zapewnimy nocny transport do hotelu oraz rano z powrotem na salę, abyście mogli odebrać swoje samochody. Na miejscu dostępny jest duży parking.</p>
                         <p>Jeśli chodzi o dojazd na wesele i powrót do domu, rozważamy organizację wspólnego transportu, np. grupowego autobusu z Warszawy. Jeśli potrzebujesz pomocy w dojeździe lub powrocie, prosimy o zaznaczenie tego w formularzu potwierdzającym obecność.</p>
@@ -447,8 +457,8 @@
                     <img src="img/gallery/3.png" alt="">
                 </div>
             </div> -->
-        
-        
+
+
         </div>
     </div>
     <!--/ gallery_area  -->
@@ -538,25 +548,53 @@
         </div>
     </div>
 
-    <!-- footer_start -->
-   <footer class="footer">
-    <div class="footer_top">
+    <div id="kids" class="kids_area">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <div class="quick_links">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Our Story</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Accommodation</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
+                    <div class="section_title text-center">
+                        <img src="img/banner/flowers.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="text-center">
+<!--                        <img src="img/pets/pets.png" class="pets_bg" alt="">-->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="text-center">
+                        <p>Pragniemy, aby nasze przyjęcie było okazją dla wszystkich do nieskrępowanej zabawy do białego rana.
+                            Dlatego zachęcamy do pozostawienia najmłodszych domowników pod opieką. &nbsp;<i class="fa fa-smile-o" aria-hidden="true"></i>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- footer_start -->
+   <footer class="footer">
+<!--    <div class="footer_top">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-xl-12">-->
+<!--                    <div class="quick_links">-->
+<!--                        <ul>-->
+<!--                            <li><a href="#">Home</a></li>-->
+<!--                            <li><a href="#">Our Story</a></li>-->
+<!--                            <li><a href="#">Gallery</a></li>-->
+<!--                            <li><a href="#">Accommodation</a></li>-->
+<!--                            <li><a href="#">Contact</a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
     <div class="copy-right_text">
         <div class="container">
             <div class="footer_border"></div>
