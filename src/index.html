@@ -202,22 +202,37 @@
                                                 <div class="col-xl-12">
                                                     <div class="input-group">
                                                         <input id="foodIntoleranceInput" name="foodIntolerance" type="text"
-                                                               placeholder="Czy posiadasz jakieś nietolerancje pokarmowe?">
-                                                        <span class="input-group-addon">
-                                                            <i class="fa fa-info-circle" aria-hidden="true"
-                                                               title="Proszę podać wszelkie nietolerancje pokarmowe, które mogą mieć wpływ na menu.">
-                                                            </i>
-                                                        </span>
+                                                               placeholder="Jakie masz preferencje żywieniowe?">
+                                                        <div class="input-group-append">
+                                                            <span>
+                                                                <i class="fa fa-info-circle" aria-hidden="true"
+                                                                   title="Masz jakieś nietolerancje popkarmowe? A może jesz wyłącznie produkty roślinne, albo wręcz przeciwnie - uwielbiasz mięso? Daj znać, postaramy się dostosować menu do Twoich potrzeb!">
+                                                                </i>
+                                                            </span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-xl-12">
                                                     <input id="accommodationInput" name="accommodation" type="text"
-                                                           placeholder="Zarezerwować Ci pokój w hotelu? (szczegóły poniżej)">
-<!--                                                    <i id="resvRoomInfo" class="fa fa-info-circle" aria-hidden="true" title="Zobacz Nocleg i transport"></i>-->
+                                                           placeholder="Czy zarezerwować Ci pokój w hotelu?">
+                                                    <div class="input-group-append">
+                                                            <span>
+                                                                <i class="fa fa-info-circle" aria-hidden="true"
+                                                                   title="Zobacz szczegóły w sekcji &quot;Nocleg i transport&quot;">
+                                                                </i>
+                                                            </span>
+                                                    </div>
                                                 </div>
                                                 <div class="col-xl-12">
-                                                    <textarea id="transportDetailsInput" name="transportDetails"
-                                                              placeholder="Czy planujesz przyjechać i wracać samochodem i możesz zaoferować komuś miejsce? A może wręcz przeciwnie, nie masz jak się dotrzeć na przyjęcie i potrzebujesz pomocy w zorganizowaniu transportu? Daj nam znać – postaramy się pomóc!"></textarea>
+                                                    <input id="transportDetailsInput" name="transportDetails" type="text"
+                                                              placeholder="Jak planujesz przyjechać na przyjęcie?">
+                                                    <div class="input-group-append">
+                                                            <span>
+                                                                <i class="fa fa-info-circle" aria-hidden="true"
+                                                                   title="Czy jesteś zainteresowany wspólnym transportem na i/lub z przyjęcia? A może już wiesz, że będziesz jechać samochodem i będziesz mieć dodatkowo wolne miejsca w aucie? Szczegóły znajdziesz w sekcji &quot;Nocleg i transport&quot;">
+                                                                </i>
+                                                            </span>
+                                                    </div>
                                                 </div>
                                                 <div class="col-xl-12">
                                                     <textarea id="additionalInfoInput" name="additionalInfo"

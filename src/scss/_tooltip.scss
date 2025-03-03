@@ -1,9 +1,13 @@
 .ui-tooltip {
   font-family: $font1;
+  font-size: 14px;
   position: absolute !important;
   z-index: 9999 !important;
   max-width: 450px;
-  background-color: white;
+  color: $white_color;
+  background-color: rgba(199, 134, 101, 1);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   padding: 5px;
+  margin: 1px;
 }
