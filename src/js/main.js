@@ -292,10 +292,19 @@ mailChimp();
             $("#search_input").focus();
         });
 
+    $('#taxi1').text($('#taxi1').text() + ' 825')
+    $('#taxi2').text($('#taxi2').text() + ' 875')
+    $('#taxi3').text($('#taxi3').text() + ' 03')
     $('#taxi4').text($('#taxi4').text() + ' 563')
     $('#taxi5').text($('#taxi5').text() + ' 124')
     $('#taxi6').text($('#taxi6').text() + ' 843')
 
-    $( document ).tooltip();
+    $('#kubasphone').text($('#kubasphone').text() + ' 965')
+    $('#kubasemail').text($('#kubasemail').text() + '@gmail.com')
+    $('#paulinasphone').text($('#paulinasphone').text() + ' 554')
+    $('#paulinasemail').text($('#paulinasemail').text() + '@gmail.com')
+
+    // $( document ).tooltip();
+    $('#attendanceForm').tooltip();
 
 })(jQuery);	
