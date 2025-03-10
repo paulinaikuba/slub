@@ -197,6 +197,14 @@
             font-family: $font1;
         }
     }
+    #rsvp-success {
+        display: none;
+        p {
+            color: #2eac2e;
+            font-size: 14px;
+            font-family: $font1;
+        }
+    }
     i {
         font-size: 18px;
         color: #C78665;

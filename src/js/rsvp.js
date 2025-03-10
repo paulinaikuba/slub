@@ -28,6 +28,8 @@ $(document).ready(function(){
             },
             submitHandler: function(form) {
                 $('#attendanceForm :input[type="submit"]').prop('disabled', true);
+                $('#rsvp-success').hide();
+                $('#rsvp-error').hide();
                 const formData = {
                     willAttend: $('#attendInput').prop('checked'),
                     firstGuestName: $('#firstGuestNameInput').val(),
@@ -45,12 +47,13 @@ $(document).ready(function(){
                     contentType: 'application/json',
                     data: JSON.stringify(formData),
                     url: import.meta.env.VITE_RSVP_FORM_URL,
-                    // url:"/api/v1/attendance",
+                    // url:"http://localhost:8080/api/v1/attendance",
                     success: function() {
                         $('#attendInput').prop('checked', true).change()
                         $('#attendanceForm :input').val('');
 
                         $('#attendanceForm :input[type="submit"]').prop('disabled', false);
+                        $('#rsvp-success').show();
                     },
                     error: function() {
                         $('#attendInput').prop('checked', true).change()
