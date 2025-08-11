@@ -1,0 +1,45 @@
+.album_area {
+
+  p {
+    font-size: 16px;
+    font-family: $font1;
+    text-align: center;
+    text-justify: auto;
+    padding-bottom: 30px;
+
+    span {
+      color: #C78665;
+    }
+  }
+
+
+  li {
+    font-size: 20px;
+    font-family: $font1;
+    color: #727272;
+    text-align: center;
+    text-justify: auto;
+    padding-bottom: 10px;
+  }
+
+  h4 {
+    font-size: 24px;
+    padding-bottom: 10px;
+    color: #C78665;
+  }
+
+  a{
+    color: #3686cd;
+  }
+  a:hover{
+    color: #C78665;
+  }
+
+  .album_bg {
+    max-width: 200px;
+    width: 100%;
+    opacity: 75%;
+  }
+
+
+}

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="zxx" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="utf-8">
@@ -53,23 +53,23 @@
                                     <ul id="navigation">
                                         <li><a class="active" href="./">Start</a></li>
                                         <li><a href="#location_area">Lokalizacja</a></li>
-                                        <li><a href="#attending_area">R.S.V.P.</a></li>
+                                        <li><a href="#menu">Menu</a></li>
+                                        <li><a href="#schedule">Harmonogram</a></li>
+                                        <li><a href="#album">Dodaj zdjęcia</a></li>
                                         <li><a href="#accommodation">Transport & nocleg</a></li>
-                                        <li><a href="#story">Nasza historia</a></li>
-                                        <li><a href="#gallery">Galeria</a></li>
-                                        <li><a href="#contact">Kontakt</a></li>
 <!--                                        <li><a href="#">blog <i class="ti-angle-down"></i></a>-->
 <!--                                            <ul class="submenu">-->
 <!--                                                <li><a href="blog.html">blog</a></li>-->
 <!--                                                <li><a href="single-blog.html">single-blog</a></li>-->
 <!--                                            </ul>-->
 <!--                                        </li>-->
-<!--                                        <li><a href="#">pages <i class="ti-angle-down"></i></a>-->
-<!--                                            <ul class="submenu">-->
-<!--                                                <li><a href="Accommodation.html">Accommodation</a></li>-->
-<!--                                                <li><a href="elements.html">elements</a></li>-->
-<!--                                            </ul>-->
-<!--                                        </li>-->
+                                        <li><a href="#">Pozostałe</a>
+                                            <ul class="submenu">
+                                                <li><a href="#story">Nasza historia</a></li>
+                                                <li><a href="#gallery">Galeria</a></li>
+                                                <li><a href="#contact">Kontakt</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>
@@ -158,111 +158,142 @@
         </div>
     </section>
     <!-- /location_area -->
-
-    <!-- attend_area -->
-    <div id="attending_area" class="attending_area">
+    <!-- menu -->
+    <div id="menu" class="menu_area">
         <div class="container">
             <div class="row">
-                <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
-                    <div class="main_attending_area">
-                        <div class="flower_1 d-none d-lg-block">
-                            <img src="img/appointment/flower-top.png" alt="">
-                        </div>
-                        <div class="flower_2 d-none d-lg-block">
-                            <img src="img/appointment/flower-bottom.png" alt="">
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-xl-7 col-lg-8">
-                                <div class="popup_box ">
-                                    <div class="popup_inner">
-                                        <div class="form_heading text-center">
-                                            <h3>Weźmiesz udział?</h3>
-                                            <p style="font-size: 14px;">Prosimy o potwierdzenie obecności przed 27. lipca.</p>
-                                        </div>
-                                        <form id="attendanceForm" action="" novalidate="novalidate">
-                                            <div class="row">
-                                                <div class="col-xl-12">
-                                                    <input id="attendInput" type="checkbox" checked data-toggle="toggle" name="willAttend"
-                                                           data-width="200"
-                                                           data-height="50"
-                                                           data-onstyle="attend"
-                                                           data-on="Wezmę udział"
-                                                           data-off="Nie wezmę udziału">
-                                                </div>
-                                                <div class="col-xl-12">
-                                                    <input id="firstGuestNameInput" name="firstGuestName" type="text"
-                                                           placeholder="Imię i nazwisko 1. gościa">
-                                                </div>
-                                                <div class="col-xl-12">
-                                                    <input id="secondGuestNameInput" name="secondGuestName" type="text"
-                                                           placeholder="Imię i nazwisko 2. gościa">
-                                                </div>
-                                                <div class="col-xl-12">
-                                                    <input id="contactInput" name="contact" type="text"
-                                                           placeholder="Email lub nr telefonu">
-                                                </div>
-                                                <div class="col-xl-12">
-                                                    <div class="input-group">
-                                                        <input id="foodIntoleranceInput" name="foodIntolerance" type="text"
-                                                               placeholder="Jakie masz preferencje żywieniowe?">
-                                                        <div class="input-group-append">
-                                                            <span>
-                                                                <i class="fa fa-info-circle" aria-hidden="true"
-                                                                   title="Masz jakieś nietolerancje popkarmowe?
-                                                                   A może jesz wyłącznie produkty roślinne, albo wręcz przeciwnie - ciężko jest Ci sobie wyobrazić posiłek bez mięsa?
-                                                                   Daj znać, postaramy się dostosować menu do Twoich potrzeb!">
-                                                                </i>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-12">
-                                                    <input id="accommodationInput" name="accommodation" type="text"
-                                                           placeholder="Czy zarezerwować Ci pokój w hotelu?">
-                                                    <div class="input-group-append">
-                                                            <span>
-                                                                <i class="fa fa-info-circle" aria-hidden="true"
-                                                                   title="Zobacz szczegóły w sekcji &quot;Nocleg i transport&quot;">
-                                                                </i>
-                                                            </span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-12">
-                                                    <input id="transportDetailsInput" name="transportDetails" type="text"
-                                                              placeholder="Jak planujesz przyjechać na przyjęcie?">
-                                                    <div class="input-group-append">
-                                                            <span>
-                                                                <i class="fa fa-info-circle" aria-hidden="true"
-                                                                   title="Czy jesteś zainteresowany wspólnym transportem na przyjęcie? A może już wiesz, że będziesz jechać samochodem i będziesz mieć wolne miejsca w aucie? Szczegóły znajdziesz w sekcji &quot;Nocleg i transport&quot;">
-                                                                </i>
-                                                            </span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-12">
-                                                    <textarea id="additionalInfoInput" name="additionalInfo"
-                                                              placeholder="Dodatkowe uwagi"></textarea>
-                                                </div>
-                                                <div class="col-xl-12">
-                                                    <button type="submit" class="boxed_btn3">Wyślij</button>
-                                                    <div id="rsvp-error">
-                                                        <p>Wystąpił błąd podczas wysyłki formularza. Proszę spróbować później.</p>
-                                                    </div>
-                                                    <div id="rsvp-success">
-                                                        <p>Dziękujemy za odpowiedź</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-xl-12">
+                    <div class="section_title text-center">
+                        <img src="img/banner/flowers.png" alt="">
+                        <h3>Menu</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center">
+                        <h4>Zupa</h4>
+                        <p>
+                            &#9702;&nbsp;Krem z białych warzyw z oliwą truflową&nbsp;<i class="fa fa-leaf wege" aria-hidden="true"></i><br>
+                            lub<br>
+                            &#9702;&nbsp;Rosół domowy z pielmieni&nbsp;<i class="fa fa-circle lactose-free" aria-hidden="true"></i>
+                        </p>
+                        <h4>Danie Główne</h4>
+                        <p>
+                            &#9702;&nbsp;Bakłażan nadziewany soczewicą zapiekany beszamelem&nbsp;<i class="fa fa-leaf wege" aria-hidden="true"></i><br>
+                            lub<br>
+                            &#9702;&nbsp;Polędwiczki wieprzowe z sosem pieprzowym, puree klasyczne, młode
+                            marchewki karmelizowane cukrem
+                        </p>
+                        <h4>Przekąski w bufecie</h4>
+                        <p>
+                            &#9702;&nbsp;Grillowana cukinia zawinięta z serkiem ziołowym&nbsp;<i class="fa fa-leaf wege" aria-hidden="true"></i><br>
+                            &#9702;&nbsp;Spring rolls z warzywami i sosem słodko pikantnym&nbsp;<i class="fa fa-leaf wege" aria-hidden="true"></i>&nbsp;<i class="fa fa-circle lactose-free" aria-hidden="true"></i><br>
+                            &#9702;&nbsp;Bakłażan zawinięty z suszonymi pomidorami, rukolą, owinięty szynką dojrzewającą<br>
+                            &#9702;&nbsp;Grillowane warzywa z pesto bazyliowym i parmezanem&nbsp;<i class="fa fa-leaf wege" aria-hidden="true"></i><br>
+                            &#9702;&nbsp;Mini wrapy z kurczakiem, warzywami i guacamole&nbsp;<i class="fa fa-circle lactose-free" aria-hidden="true"></i><br>
+                            &#9702;&nbsp;Grillowany boczniak marynowany w ziołach z glace balsamicznym i parmezanem&nbsp;<i class="fa fa-leaf wege" aria-hidden="true"></i><br>
+                            &#9702;&nbsp;Pieczony burak marynowanych w balsamico z kozim serem i roszponką&nbsp;<i class="fa fa-leaf wege" aria-hidden="true"></i>&nbsp;<i class="fa fa-circle lactose-free" aria-hidden="true"></i><br>
+                            &#9702;&nbsp;Pasztet z soczewicy z chutneyem z jabłkiem&nbsp;<i class="fa fa-leaf wege" aria-hidden="true"></i>&nbsp;<i class="fa fa-circle lactose-free" aria-hidden="true"></i><br>
+                            &#9702;&nbsp;Roszponka, szpinak, gruszka marynowana, kozi ser, orzech włoski, sos balsamico&nbsp;<i class="fa fa-leaf wege" aria-hidden="true"></i>&nbsp;<i class="fa fa-circle lactose-free" aria-hidden="true"></i><br>
+                            &#9702;&nbsp;Sałata z pieczoną dynią, cieciorką, bakłażanem i sosem pomarańczowym&nbsp;<i class="fa fa-leaf wege" aria-hidden="true"></i>&nbsp;<i class="fa fa-circle lactose-free" aria-hidden="true"></i>
+                        </p>
+                        <h4>Danie w kokilce</h4>
+                        <p>
+                            &#9702;&nbsp;Żółte curry z tofu&nbsp;<i class="fa fa-leaf wege" aria-hidden="true"></i>&nbsp;<i class="fa fa-circle lactose-free" aria-hidden="true"></i>
+                        </p>
+                        <h4>Danie w bufecie</h4>
+                        <p>
+                            &#9702;&nbsp;Sola w sosie cytrynowo-limonkowym<br>
+                            lub<br>
+                            &#9702;&nbsp;Ravioli ze szpinakiem i ricottą w sosie gorgonzolowym&nbsp;<i class="fa fa-leaf wege" aria-hidden="true"></i>
+                        </p>
+                        <h4>Słodki bufet</h4>
+                        <p>
+                            &#9702;&nbsp;Sernik słony karmel&nbsp;<i class="fa fa-leaf wege" aria-hidden="true"></i><br>
+                            &#9702;&nbsp;Szarlotka&nbsp;<i class="fa fa-leaf wege" aria-hidden="true"></i>&nbsp;<i class="fa fa-circle lactose-free" aria-hidden="true"></i><br>
+                            &#9702;&nbsp;Panna Cotta z sosem malinowym&nbsp;<i class="fa fa-leaf wege" aria-hidden="true"></i>&nbsp;<i class="fa fa-circle lactose-free" aria-hidden="true"></i><br>
+                            &#9702;&nbsp;Mus chałwowy z ziemią jadalną&nbsp;<i class="fa fa-leaf wege" aria-hidden="true"></i><br>
+                            &#9702;&nbsp;Owoce filetowane&nbsp;<i class="fa fa-leaf wege" aria-hidden="true"></i>&nbsp;<i class="fa fa-circle lactose-free" aria-hidden="true"></i><br>
+                            &#9702;&nbsp;Tarta cytrynowa z bezą włoską&nbsp;<i class="fa fa-leaf wege" aria-hidden="true"></i>
+                        </p>
+                        <h4>Na zakończenie</h4>
+                        <p>
+                            &#9702;&nbsp;Barszcz czerwony z pasztecikami francuskimi z kapustą i pieczarkami&nbsp;<i class="fa fa-leaf wege" aria-hidden="true"></i>
+                        </p>
+                        <p>
+                            <i class="fa fa-leaf wege" aria-hidden="true"></i> - Dania wegetariańskie<br>
+                            <i class="fa fa-circle lactose-free" aria-hidden="true"></i> - Dania bez laktozy<br>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- / attend_area -->
+    <!-- /menu -->
+    <!-- schedule -->
+    <div id="schedule" class="schedule_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center">
+                        <img src="img/banner/flowers.png" alt="">
+                        <h3>Harmonogram</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center">
+                        <ul>
+                            <li>18:00 Pierwszy posiłek&nbsp;<i class="fa fa-cutlery" aria-hidden="true"></i></li>
+                            <li>19:00 Pierwszy taniec&nbsp;<i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li>19:30 Niespodzianka&nbsp;<i class="fa fa-bomb" aria-hidden="true"></i></li>
+                            <li>20:30 Danie w kokilce&nbsp;<i class="fa fa-cutlery" aria-hidden="true"></i></li>
+                            <li>22:45 Gorący bufet&nbsp;<i class="fa fa-cutlery" aria-hidden="true"></i></li>
+                            <li>00:00 Oczepiny&nbsp;<i class="fa fa-trophy" aria-hidden="true"></i></li>
+                            <li>00:50 Ostatni drink z baru&nbsp;<i class="fa fa-glass" aria-hidden="true"></i></li>
+                            <li>01:45 Ostatni posiłek&nbsp;<i class="fa fa-cutlery" aria-hidden="true"></i></li>
+                            <li>04:00 Ostatni taniec&nbsp;<i class="fa fa-music" aria-hidden="true"></i></li>
+                            <li>04:15 Transport do hotelu&nbsp;<i class="fa fa-bus" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /schedule -->
+    <!-- album -->
+    <div id="album" class="album_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center">
+                        <img src="img/banner/flowers.png" alt="">
+                        <h3>Dodaj zdjęcia</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center">
+                        <p>
+                            Udało Ci się uchwycić niezapomniane chwile swoim aparatem? Podziel się z nami i pozostałymi gośćmi swoimi! <br>
+                            Dodaj zdjęcia z wesela do współdzielonego <a href="https://photos.app.goo.gl/6KvmdC5KL5c37UJE6" target="_blank">albumu</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="text-center">
+                        <img src="img/album/camera.png" class="album_bg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /album -->
 
     <!-- accommodation_area -->
     <div id="accommodation" class="accommodation_area">
